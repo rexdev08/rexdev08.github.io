@@ -306,11 +306,12 @@ body {
   // background-color: pink;
   display: flex;
   justify-content: center;
+  align-items: center;
   // align-items: start;
   scroll-margin-top: 70px;
 
   &__content {
-    padding-top: clamp(3rem, 10vw, 6rem);
+    // padding-top: clamp(3rem, 10vw, 6rem);
     width: 90%;
     height: 100%;
     display: flex;
@@ -338,14 +339,14 @@ body {
       scale: 1.4;
       opacity: 0;
       box-shadow: 10px -10px 30px 1px rgba(47, 0, 255, 0.693),
-        -10px 5px 30px 1px rgba(3, 233, 3, 0.737),
+        -10px 5px 30px 1px rgba(3, 199, 233, 0.737),
         10px 10px 30px 1px rgba(255, 255, 255, 0.335);
     }
 
     50% {
-      box-shadow: 10px -10px 30px 350px rgba(0, 255, 42, 0),
-        -10px 5px 30px 400px rgba(6, 133, 6, 0),
-        10px 5px 30px 300px rgba(187, 187, 187, 0);
+      box-shadow: 10px -10px 30px 100px rgba(0, 255, 42, 0),
+        -10px 5px 30px 200px rgba(6, 133, 6, 0),
+        10px 5px 30px 250px rgba(187, 187, 187, 0);
     }
 
     100% {
