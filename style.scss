@@ -309,6 +309,13 @@ body {
   align-items: center;
   // align-items: start;
   scroll-margin-top: 70px;
+  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+  animation: 10s linear 0s normal none infinite animate;
+
+  @keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
 
   &__content {
     // padding-top: clamp(3rem, 10vw, 6rem);
