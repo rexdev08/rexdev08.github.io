@@ -208,6 +208,8 @@ body {
   padding: 0.5rem;
 }
 .settings__button {
+  font-size: 18px;
+  font-weight: 500;
   min-width: 90px;
   padding: 0.5rem;
   background-color: rgb(197, 197, 197);
@@ -219,6 +221,7 @@ body {
   gap: 0.2rem;
   color: #1d1d1f;
   cursor: pointer;
+  border: none;
 }
 .settings__button--active {
   background-color: rgb(245, 245, 247);
@@ -497,7 +500,6 @@ body {
 }
 .about__p {
   text-align: center;
-  font-weight: 80px;
   font-weight: 500;
   font-size: clamp(16px, 10vw, 22px);
   line-height: 1.6;

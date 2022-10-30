@@ -1,234 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raimundo Rincon | El entusiasta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raimundo Rincon | El entusiasta</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="header">
-    <span class="header__logo">Raimundo Rincon</span>
-    <button id="btn-menu" class="header__btn-menu">
-      <svg class="header__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-        <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-      </svg>
-    </button>
-    <nav class="header__nav">
-      <a href="#acerca-de-mi" class="header__link">acerca de mi</a>
-      <a href="#proyectos" class="header__link">proyectos</a>
-      <a href="#contacto" class="header__link">contacto</a>
-    </nav>
-  </header>
-
-  <main class="main">
-    <div class="settings-wrapper">
-      <button id="open-settings" class="settings__btn-open">
-        <svg class="svg svg--open" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <body>
+    <header class="header">
+      <span class="header__logo">Raimundo Rincon</span>
+      <button id="btn-menu" class="header__btn-menu">
+        <svg
+          class="header__svg"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+        >
           <path
-            d="M19.5,12 C19.5,11.77 19.49,11.55 19.47,11.32 L21.33,9.91 C21.73,9.61 21.84,9.05 21.59,8.61 L19.72,5.38 C19.47,4.94 18.93,4.76 18.47,4.96 L16.32,5.87 C15.95,5.61 15.56,5.38 15.15,5.19 L14.86,2.88 C14.8,2.38 14.37,2 13.87,2 L10.14,2 C9.63,2 9.2,2.38 9.14,2.88 L8.85,5.19 C8.44,5.38 8.05,5.61 7.68,5.87 L5.53,4.96 C5.07,4.76 4.53,4.94 4.28,5.38 L2.41,8.62 C2.16,9.06 2.27,9.61 2.67,9.92 L4.53,11.33 C4.51,11.55 4.5,11.77 4.5,12 C4.5,12.23 4.51,12.45 4.53,12.68 L2.67,14.09 C2.27,14.39 2.16,14.95 2.41,15.39 L4.28,18.62 C4.53,19.06 5.07,19.24 5.53,19.04 L7.68,18.13 C8.05,18.39 8.44,18.62 8.85,18.81 L9.14,21.12 C9.2,21.62 9.63,22 10.13,22 L13.86,22 C14.36,22 14.79,21.62 14.85,21.12 L15.14,18.81 C15.55,18.62 15.94,18.39 16.31,18.13 L18.46,19.04 C18.92,19.24 19.46,19.06 19.71,18.62 L21.58,15.39 C21.83,14.95 21.72,14.4 21.32,14.09 L19.46,12.68 C19.49,12.45 19.5,12.23 19.5,12 Z M12.04,15.5 C10.11,15.5 8.54,13.93 8.54,12 C8.54,10.07 10.11,8.5 12.04,8.5 C13.97,8.5 15.54,10.07 15.54,12 C15.54,13.93 13.97,15.5 12.04,15.5 Z"
-            id="Shape" fill="currentColor" fill-rule="nonzero"></path>
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
         </svg>
       </button>
+      <nav class="header__nav">
+        <a href="#acerca-de-mi" class="header__link">acerca de mi</a>
+        <a href="#proyectos" class="header__link">proyectos</a>
+        <a href="#contacto" class="header__link">contacto</a>
+      </nav>
+    </header>
 
-      <div class="settings">
-        <div class="settings__header">
-          <button id="close-settings" class="settings__btn-close">
-            <svg class="svg svg--close" width="16px" height="16px" viewBox="0 0 16 16" version="1.1"
-              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-                <g id="Group-11" transform="translate(1.500000, 2.000000)" stroke="currentColor" stroke-width="2.5">
-                  <line x1="12.0208153" y1="0" x2="1.81915623e-12" y2="12.0208153" id="Line-5"
-                    transform="translate(6.010408, 6.010408) rotate(-90.000000) translate(-6.010408, -6.010408) ">
-                  </line>
-                  <line x1="3.68594044e-13" y1="4.23661106e-13" x2="12.0208153" y2="12.0208153" id="Line-5-Copy"
-                    transform="translate(6.010408, 6.010408) rotate(-90.000000) translate(-6.010408, -6.010408) ">
-                  </line>
+    <main class="main">
+      <div class="settings-wrapper">
+        <button id="open-settings" class="settings__btn-open">
+          <svg
+            class="svg svg--open"
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M19.5,12 C19.5,11.77 19.49,11.55 19.47,11.32 L21.33,9.91 C21.73,9.61 21.84,9.05 21.59,8.61 L19.72,5.38 C19.47,4.94 18.93,4.76 18.47,4.96 L16.32,5.87 C15.95,5.61 15.56,5.38 15.15,5.19 L14.86,2.88 C14.8,2.38 14.37,2 13.87,2 L10.14,2 C9.63,2 9.2,2.38 9.14,2.88 L8.85,5.19 C8.44,5.38 8.05,5.61 7.68,5.87 L5.53,4.96 C5.07,4.76 4.53,4.94 4.28,5.38 L2.41,8.62 C2.16,9.06 2.27,9.61 2.67,9.92 L4.53,11.33 C4.51,11.55 4.5,11.77 4.5,12 C4.5,12.23 4.51,12.45 4.53,12.68 L2.67,14.09 C2.27,14.39 2.16,14.95 2.41,15.39 L4.28,18.62 C4.53,19.06 5.07,19.24 5.53,19.04 L7.68,18.13 C8.05,18.39 8.44,18.62 8.85,18.81 L9.14,21.12 C9.2,21.62 9.63,22 10.13,22 L13.86,22 C14.36,22 14.79,21.62 14.85,21.12 L15.14,18.81 C15.55,18.62 15.94,18.39 16.31,18.13 L18.46,19.04 C18.92,19.24 19.46,19.06 19.71,18.62 L21.58,15.39 C21.83,14.95 21.72,14.4 21.32,14.09 L19.46,12.68 C19.49,12.45 19.5,12.23 19.5,12 Z M12.04,15.5 C10.11,15.5 8.54,13.93 8.54,12 C8.54,10.07 10.11,8.5 12.04,8.5 C13.97,8.5 15.54,10.07 15.54,12 C15.54,13.93 13.97,15.5 12.04,15.5 Z"
+              id="Shape"
+              fill="currentColor"
+              fill-rule="nonzero"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="settings">
+          <div class="settings__header">
+            <button id="close-settings" class="settings__btn-close">
+              <svg
+                class="svg svg--close"
+                width="16px"
+                height="16px"
+                viewBox="0 0 16 16"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g
+                  id="Page-1"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                  stroke-linecap="round"
+                >
+                  <g
+                    id="Group-11"
+                    transform="translate(1.500000, 2.000000)"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                  >
+                    <line
+                      x1="12.0208153"
+                      y1="0"
+                      x2="1.81915623e-12"
+                      y2="12.0208153"
+                      id="Line-5"
+                      transform="translate(6.010408, 6.010408) rotate(-90.000000) translate(-6.010408, -6.010408) "
+                    ></line>
+                    <line
+                      x1="3.68594044e-13"
+                      y1="4.23661106e-13"
+                      x2="12.0208153"
+                      y2="12.0208153"
+                      id="Line-5-Copy"
+                      transform="translate(6.010408, 6.010408) rotate(-90.000000) translate(-6.010408, -6.010408) "
+                    ></line>
+                  </g>
                 </g>
-              </g>
-            </svg>
-          </button>
-          <h3 class="settings__title">Ajustes</h3>
-        </div>
-
-        <div class="settings__appearance">
-          <h3 class="settings__title settings__title--appearance">
-            Apariencia
-          </h3>
-          <div class="settings__buttons">
-            <buttons id="light" class="settings__button">
-              <img loading="lazy" src="./assets/sun.svg" alt="" class="settings__image" />
-              light
-            </buttons>
-            <buttons id="dark" class="settings__button settings__button--active">
-              <img loading="lazy" src="./assets/moon.svg" alt="" class="settings__image" />dark
-            </buttons>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="home" class="home">
-      <div class="home__content">
-        <img loading="lazy" src="./assets/Raimudo-png.png" alt="" class="home__image" />
-
-        <h2 class="home__name">Raimundo Rincon</h2>
-
-        <h1 class="home__title">Desarrollador Web</h1>
-      </div>
-    </section>
-
-    <section id="acerca-de-mi" class="about">
-      <h1 class="about__title">Acerca de mi</h1>
-
-      <div class="about__content">
-        <div class="about__card">
-          <p class="about__p">
-            Desarrollador web | HTML | CSS | Javascript | SCSS | ReactJS
-            <br /><br />
-            Soy un apasionado de la programación, con buenos valores, tengo
-            soft skills (soy amable y respetuoso...) y tambien dispuesto a trabajar con
-            nuevas tecnologias.
-            <br /><br />
-            Una de mis mayores motivaciones es aprender. Así empecé haciendo
-            cursos, devorando libros , tutoriales y ademas complemento lo
-            anterior siendo autodidacta.
-          </p>
-        </div>
-
-        <div class="about__skills">
-          <h3 class="about__h3">tecnologias y herramientas que utilizo</h3>
-
-          <div class="about__skill about__skill--html" title="Hypertext Markup Language">
-            <img loading="lazy" class="about__icon" src="./assets/icons/html.png" alt="" />
-            <span class="about__text">HTML</span>
-          </div>
-          <div class="about__skill about__skill--css" title="Cascading Style Sheets">
-            <img loading="lazy" class="about__icon" src="./assets/icons/css.png" alt="" />
-            <span class="about__text">CSS</span>
-          </div>
-          <div class="about__skill about__skill--sass" title="syntactically awesome style sheets">
-            <img loading="lazy" class="about__icon" src="./assets/icons/sass.png" alt="" />
-            <span class="about__text">SASS</span>
-          </div>
-          <div class="about__skill about__skill--javascript" title="Javascript">
-            <img loading="lazy" class="about__icon" src="./assets/icons/javascript.png" alt="" />
-            <span class="about__text">Javascript</span>
-          </div>
-          <div class="about__skill about__skill--figma" title="figma">
-            <img loading="lazy" class="about__icon" src="./assets/icons/figma.png" alt="" />
-            <span class="about__text">Figma</span>
-          </div>
-          <div class="about__skill about__skill--react" title="React">
-            <img loading="lazy" class="about__icon" src="./assets/icons/react.png" alt="" />
-            <span class="about__text">React</span>
-          </div>
-          <div class="about__skill about__skill--github" title="github">
-            <img loading="lazy" class="about__icon" src="./assets/icons/github.png" alt="" />
-            <span class="about__text">Github</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="proyectos" class="projects">
-      <div class="projects__header">
-        <h3 class="projects__title">Proyectos</h3>
-        <h1 class="projects__sub-title">Algunos de mis proyectos.</h1>
-      </div>
-
-      <div class="projects__container">
-
-
-        <a target="_blank" href="https://instagramclon2022.netlify.app/" class="projects__link">
-          <div class="projects__wrapper">
-            <img src="./assets/clon-instagram.png" alt="" class="projects__image" />
-          </div>
-        </a>
-
-        <a target="_blank" href="https://clon-disneyplus.netlify.app/" class="projects__link">
-          <div class="projects__wrapper">
-            <img src="./assets/clon-disneyplus.png" alt="" class="projects__image" />
-          </div>
-        </a>
-
-        <a target="_blank" href="https://peliculas-rexdev08.netlify.app/" class="projects__link">
-          <div class="projects__wrapper">
-            <img src="./assets/info-pelis-imdb.png" alt="" class="projects__image" />
-          </div>
-        </a>
-
-        <a target="_blank" href="https://sofadeluxe.netlify.app/" class="projects__link">
-          <div class="projects__wrapper">
-            <img src="./assets/sofadeluxe.png" alt="" class="projects__image" />
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="contacto" class="contact">
-      <h1 class="contact__title">Contacto</h1>
-      <div class="contact__content">
-        <div class="rrss">
-          <div class="linkedin">
-            <div class="linkedin__header">
-              <img loading="lazy" src="./assets/icons/linkedin.png" alt="" class="linkedin__logo" />
-            </div>
-            <img loading="lazy" class="linkedin__photo" src="./assets/raimundo-2.jpg" alt="" />
-            <span class="linkedin__span">Raimundo Rincon</span>
-            <h3 class="linked__h3">Ingresa para ver mi perfil</h3>
-
-            <a target="_blank" href="https://www.linkedin.com/in/rexdev08/" class="linkedin__link">Ver perfil</a>
+              </svg>
+            </button>
+            <h3 class="settings__title">Ajustes</h3>
           </div>
 
-          <div class="github">
-            <div class="github__header">
-              <img loading="lazy" src="./assets/icons/github.png" alt="" class="github__logo" />
-            </div>
-            <img loading="lazy" class="github__photo" src="./assets/raimundo-2.jpg" alt="" />
-            <span class="github__span">rexdev08</span>
-            <h3 class="linked__h3">
-              Ingresa para ver el codigo fuente de algunos de mis proyectos
+          <div class="settings__appearance">
+            <h3 class="settings__title settings__title--appearance">
+              Apariencia
             </h3>
-            <a target="_blank" href="https://github.com/rexdev08" class="github__link">Ver perfil</a>
+            <div class="settings__buttons">
+              <button id="light" class="settings__button">
+                <img
+                  loading="lazy"
+                  src="./assets/sun.svg"
+                  alt="imagen"
+                  class="settings__image"
+                />
+                light
+              </button>
+              <button
+                id="dark"
+                class="settings__button settings__button--active"
+              >
+                <img
+                  loading="lazy"
+                  src="./assets/moon.svg"
+                  alt="imagen"
+                  class="settings__image"
+                />dark
+              </button>
+            </div>
           </div>
         </div>
-
-        <form action="" class="form">
-          <label class="form__label" for="name">Nombre completo</label>
-          <input class="form__imput" type="text" name="name" id="name" placeholder="Escribe tu nombre y apellido"
-            required />
-          <label class="form__label" for="email">Email</label>
-          <input class="form__imput" type="email" name="email" id="email" placeholder="Escribe tu correo electronico" />
-          <label class="form__label" for="subject">Asunto</label>
-          <input class="form__imput" type="text" name="subject" id="subject"
-            placeholder="Escribe el asunto del mensaje" />
-          <label class="form__label" for="message">Mensaje</label>
-          <textarea class="form__text-area" id="message" name="message" id="" cols="30" rows="10"
-            placeholder="Escribe el contenido del mensaje"></textarea>
-          <input class="form__imput--submit" class="submit" id="submit" type="submit" value="Enviar" />
-        </form>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p class="footer__text">
-      © 2022 Raimundo Rincon. todos los derechos reservados.
-    </p>
-  </footer>
+      <section id="home" class="home">
+        <div class="home__content">
+          <img
+            loading="lazy"
+            src="./assets/Raimudo-png.png"
+            alt="imagen"
+            class="home__image"
+          />
 
-  <script src="./app.js" type="module"></script>
-</body>
+          <h2 class="home__name">Raimundo Rincon</h2>
 
+          <h1 class="home__title">Desarrollador Web</h1>
+        </div>
+      </section>
+
+      <section id="acerca-de-mi" class="about">
+        <h1 class="about__title">Acerca de mi</h1>
+
+        <div class="about__content">
+          <div class="about__card">
+            <p class="about__p">
+              Desarrollador web | HTML | CSS | Javascript | SCSS | ReactJS
+              <br /><br />
+              Soy un apasionado de la programación, con buenos valores, tengo
+              soft skills (soy amable y respetuoso...) y tambien dispuesto a
+              trabajar con nuevas tecnologias.
+              <br /><br />
+              Una de mis mayores motivaciones es aprender. Así empecé haciendo
+              cursos, devorando libros , tutoriales y ademas complemento lo
+              anterior siendo autodidacta.
+            </p>
+          </div>
+
+          <div class="about__skills">
+            <h3 class="about__h3">tecnologias y herramientas que utilizo</h3>
+
+            <div
+              class="about__skill about__skill--html"
+              title="Hypertext Markup Language"
+            >
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/html.png"
+                alt="imagen"
+              />
+              <span class="about__text">HTML</span>
+            </div>
+            <div
+              class="about__skill about__skill--css"
+              title="Cascading Style Sheets"
+            >
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/css.png"
+                alt="imagen"
+              />
+              <span class="about__text">CSS</span>
+            </div>
+            <div
+              class="about__skill about__skill--sass"
+              title="syntactically awesome style sheets"
+            >
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/sass.png"
+                alt="imagen"
+              />
+              <span class="about__text">SASS</span>
+            </div>
+            <div
+              class="about__skill about__skill--javascript"
+              title="Javascript"
+            >
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/javascript.png"
+                alt="imagen"
+              />
+              <span class="about__text">Javascript</span>
+            </div>
+            <div class="about__skill about__skill--figma" title="figma">
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/figma.png"
+                alt="imagen"
+              />
+              <span class="about__text">Figma</span>
+            </div>
+            <div class="about__skill about__skill--react" title="React">
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/react.png"
+                alt="imagen"
+              />
+              <span class="about__text">React</span>
+            </div>
+            <div class="about__skill about__skill--github" title="github">
+              <img
+                loading="lazy"
+                class="about__icon"
+                src="./assets/icons/github.png"
+                alt="imagen"
+              />
+              <span class="about__text">Github</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="projects">
+        <div class="projects__header">
+          <h3 class="projects__title">Proyectos</h3>
+          <h1 class="projects__sub-title">Algunos de mis proyectos.</h1>
+        </div>
+
+        <div class="projects__container">
+          <a
+            target="_blank"
+            href="https://instagramclon2022.netlify.app/"
+            class="projects__link"
+          >
+            <div class="projects__wrapper">
+              <img
+                src="./assets/clon-instagram.png"
+                alt="imagen"
+                class="projects__image"
+              />
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://clon-disneyplus.netlify.app/"
+            class="projects__link"
+          >
+            <div class="projects__wrapper">
+              <img
+                src="./assets/clon-disneyplus.png"
+                alt="imagen"
+                class="projects__image"
+              />
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://peliculas-rexdev08.netlify.app/"
+            class="projects__link"
+          >
+            <div class="projects__wrapper">
+              <img
+                src="./assets/info-pelis-imdb.png"
+                alt="imagen"
+                class="projects__image"
+              />
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://sofadeluxe.netlify.app/"
+            class="projects__link"
+          >
+            <div class="projects__wrapper">
+              <img
+                src="./assets/sofadeluxe.png"
+                alt="imagen"
+                class="projects__image"
+              />
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact">
+        <h1 class="contact__title">Contacto</h1>
+        <div class="contact__content">
+          <div class="rrss">
+            <div class="linkedin">
+              <div class="linkedin__header">
+                <img
+                  loading="lazy"
+                  src="./assets/icons/linkedin.png"
+                  alt="imagen"
+                  class="linkedin__logo"
+                />
+              </div>
+              <img
+                loading="lazy"
+                class="linkedin__photo"
+                src="./assets/raimundo-2.jpg"
+                alt="imagen"
+              />
+              <span class="linkedin__span">Raimundo Rincon</span>
+              <h3 class="linked__h3">Ingresa para ver mi perfil</h3>
+
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/rexdev08/"
+                class="linkedin__link"
+                >Ver perfil</a
+              >
+            </div>
+
+            <div class="github">
+              <div class="github__header">
+                <img
+                  loading="lazy"
+                  src="./assets/icons/github.png"
+                  alt="imagen"
+                  class="github__logo"
+                />
+              </div>
+              <img
+                loading="lazy"
+                class="github__photo"
+                src="./assets/raimundo-2.jpg"
+                alt="imagen"
+              />
+              <span class="github__span">rexdev08</span>
+              <h3 class="linked__h3">
+                Ingresa para ver el codigo fuente de algunos de mis proyectos
+              </h3>
+              <a
+                target="_blank"
+                href="https://github.com/rexdev08"
+                class="github__link"
+                >Ver perfil</a
+              >
+            </div>
+          </div>
+
+          <form action="get" class="form">
+            <label class="form__label" for="name">Nombre completo</label>
+            <input
+              class="form__imput"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Escribe tu nombre y apellido"
+              required
+            />
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__imput"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Escribe tu correo electronico"
+            />
+            <label class="form__label" for="subject">Asunto</label>
+            <input
+              class="form__imput"
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Escribe el asunto del mensaje"
+            />
+            <label class="form__label" for="message">Mensaje</label>
+            <textarea
+              class="form__text-area"
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Escribe el contenido del mensaje"
+            ></textarea>
+            <input
+              class="form__imput--submit submit"
+              id="submit"
+              type="submit"
+              value="Enviar"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        © 2022 Raimundo Rincon. todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
 </html>

@@ -260,6 +260,8 @@ body {
   }
 
   &__button {
+    font-size: $text-size-standard;
+    font-weight: $text-weight-medium;
     min-width: 90px;
     padding: 0.5rem;
     background-color: rgb(197, 197, 197);
@@ -271,6 +273,7 @@ body {
     gap: 0.2rem;
     color: $text-black;
     cursor: pointer;
+    border: none;
   }
 
   &__button--active {
@@ -626,7 +629,6 @@ body {
 
   &__p {
     text-align: center;
-    font-weight: $text-size-large;
     font-weight: $text-weight-medium;
     font-size: clamp(16px, 10vw, 22px);
     line-height: 1.6;
