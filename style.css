@@ -518,6 +518,7 @@ body {
   font-size: clamp(14px, 10vw, 80px);
   font-weight: 600;
   margin-bottom: 2rem;
+  background: #2980b9 url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
 }
 .contact__content {
   width: 100%;
@@ -612,6 +613,7 @@ body {
   border: none;
   background-color: #3997f7;
   cursor: pointer;
+  border-radius: 0.5rem;
 }
 .form__imput--submit:hover {
   background-color: #267bc1;
