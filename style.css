@@ -347,9 +347,9 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  column-gap: 3rem;
-  row-gap: 1rem;
+  padding: 1.3rem;
+  column-gap: 2rem;
+  row-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 @media (max-width: 520px) {
@@ -367,6 +367,7 @@ body {
   transition: translate 1s, opacity 1s;
 }
 .projects__image {
+  aspect-ratio: 2/1;
   width: 100%;
   height: 100%;
   scale: 1.01;
