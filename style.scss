@@ -473,10 +473,10 @@ body {
     // border-radius: 1rem;
     // object-fit: contain;
     scale: 1.01;
-    transition: scale 0.2s;
+    transition: scale 0.5s;
 
     &:hover {
-      scale: 1.02;
+      scale: 1.1;
       filter: saturate(130%);
     }
   }

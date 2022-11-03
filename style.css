@@ -384,10 +384,10 @@ body {
   width: 100%;
   height: 100%;
   scale: 1.01;
-  transition: scale 0.2s;
+  transition: scale 0.5s;
 }
 .projects__image:hover {
-  scale: 1.02;
+  scale: 1.1;
   filter: saturate(130%);
 }
 
