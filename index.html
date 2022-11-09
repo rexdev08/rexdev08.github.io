@@ -453,7 +453,8 @@
             </div>
           </div>
 
-          <form action="get" class="form">
+          <form action="get" class="form" id="form">
+            
             <label class="form__label" for="name">Nombre completo</label>
             <input
               class="form__imput"
@@ -463,6 +464,8 @@
               placeholder="Escribe tu nombre y apellido"
               required
             />
+
+
             <label class="form__label" for="email">Email</label>
             <input
               class="form__imput"
@@ -471,6 +474,8 @@
               id="email"
               placeholder="Escribe tu correo electronico"
             />
+
+
             <label class="form__label" for="subject">Asunto</label>
             <input
               class="form__imput"
@@ -479,6 +484,7 @@
               id="subject"
               placeholder="Escribe el asunto del mensaje"
             />
+
             <label class="form__label" for="message">Mensaje</label>
             <textarea
               class="form__text-area"
@@ -488,6 +494,8 @@
               rows="10"
               placeholder="Escribe el contenido del mensaje"
             ></textarea>
+
+            
             <input
               class="form__imput--submit submit"
               id="submit"
