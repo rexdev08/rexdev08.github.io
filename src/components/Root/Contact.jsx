@@ -3,50 +3,93 @@ import peaks from "../../assets/peaks.svg";
 import linkedin from "../../assets/linkedin.png";
 import github from "../../assets/github.png";
 import tree from "../../assets/tree.png";
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import Notifications from "../Notifications";
 
 function Contact() {
+  const [config, setConfig] = useState({});
+
+  const form = useRef();
+
+  const serviceId = import.meta.env.VITE_YOUR_SERVICE_ID;
+  const templateId = import.meta.env.VITE_YOUR_TEMPLATE_ID;
+  const apiKey = import.meta.env.VITE_YOUR_PUBLIC_KEY;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(serviceId, templateId, form.current, apiKey).then(
+      (result) => {
+        // console.log(result.text);
+        setConfig({ info: "Mensaje enviado" });
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
-    <Section id="contacto">
-      <Header>Contacto</Header>
+    <>
+      <Notifications config={config} />
+      <Section id="contacto">
+        <Header>Contacto</Header>
 
-      <FlexContainer>
-        <Form action="get" id="form">
-          <Input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Nombre"
-            required
-          />
-          <Input type="email" name="email" id="email" placeholder="Email" />
-          <Input type="text" name="subject" id="subject" placeholder="Asunto" />
-          <Textarea
-            id="message"
-            name="message"
-            cols="30"
-            rows="5"
-            placeholder="Mensaje"
-          ></Textarea>
+        <FlexContainer>
+          <Form action="get" id="form" ref={form} onSubmit={sendEmail}>
+            <Input
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder="Nombre"
+              required
+            />
+            <Input
+              type="email"
+              name="user_email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <Input
+              type="text"
+              name="asunto"
+              id="subject"
+              placeholder="Asunto"
+            />
+            <Textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="5"
+              placeholder="Mensaje"
+              required
+            ></Textarea>
 
-          <Submit id="submit" type="submit" value="Enviar" />
-        </Form>
+            <Submit id="submit" type="submit" value="Enviar" />
+          </Form>
 
-        <LinksContainer>
-          <Link
-            href={"https://www.linkedin.com/in/rexdev08/"}
-            target={"_blank"}
-          >
-            <img src={linkedin} alt="" />
-          </Link>
-          <Link href={"https://github.com/rexdev08"} target={"_blank"}>
-            <img src={github} alt="" />
-          </Link>
-          <Link href={"https://mytreelink.netlify.app/u/rexdev"} target={"_blank"}>
-            <img src={tree} alt="" className="tree" />
-          </Link>
-        </LinksContainer>
-      </FlexContainer>
-    </Section>
+          <LinksContainer>
+            <Link
+              href={"https://www.linkedin.com/in/rexdev08/"}
+              target={"_blank"}
+            >
+              <img src={linkedin} alt="" />
+            </Link>
+            <Link href={"https://github.com/rexdev08"} target={"_blank"}>
+              <img src={github} alt="" />
+            </Link>
+            <Link
+              href={"https://mytreelink.netlify.app/u/rexdev"}
+              target={"_blank"}
+            >
+              <img src={tree} alt="" className="tree" />
+            </Link>
+          </LinksContainer>
+        </FlexContainer>
+      </Section>
+    </>
   );
 }
 

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { breakpoints } from "../../GlobalStyles";
-// import Section from "../Section";
 import html from "../../assets/icons/html.png";
 import sass from "../../assets/icons/sass.png";
 import github from "../../assets/icons/github.png";
