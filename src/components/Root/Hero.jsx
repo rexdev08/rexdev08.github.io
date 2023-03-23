@@ -8,13 +8,15 @@ import fondo from "../../assets/fondo-azul.png";
 const Hero = () => {
   const [weather, setWeather] = useState(null);
 
+  const weatherApiKey = import.meta.env.VITE_WEATHER_KEY;
+
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((coords) => {
         const fetchData = async () => {
           try {
             const response = await fetch(
-              `https://api.openweathermap.org/data/2.5/weather?lat=${coords.coords.latitude}&lon=${coords.coords.longitude}&appid=bb814428700d6c6f13f60200afcbc4c7&units=metric`
+              `https://api.openweathermap.org/data/2.5/weather?lat=${coords.coords.latitude}&lon=${coords.coords.longitude}&appid=${weatherApiKey}&units=metric`
             );
             const data = await response.json();
             // console.log(data);
@@ -182,9 +184,9 @@ const ClimaContainer = styled.div`
   left: 20px;
   font-size: 1.6rem;
   font-weight: bold;
-  border:solid;
-  border-radius:1rem;
- padding-inline-start:.3rem;
+  border: solid;
+  border-radius: 1rem;
+  padding-inline-start: 0.3rem;
 `;
 
 const IconoClima = styled.img`
