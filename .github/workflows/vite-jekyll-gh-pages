@@ -39,7 +39,7 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-        env:
+        with:
           VITE_YOUR_SERVICE_ID: {{secrets.VITE_YOUR_SERVICE_ID}}
           VITE_YOUR_TEMPLATE_ID: {{secrets.VITE_YOUR_TEMPLATE_ID}}
           VITE_YOUR_PUBLIC_KEY: {{secrets.VITE_YOUR_PUBLIC_KEY}}
